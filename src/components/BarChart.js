@@ -11,8 +11,8 @@ ChartJS.register(
 
 const BarChart = () => {
     const { years, count } = useFetch()
-    const [sortedYears, setSortedYears] = useState()
-    const [sortedCount, setSortedCount] = useState()
+    const [sortedYears, setSortedYears] = useState([])
+    const [sortedCount, setSortedCount] = useState([])
 
     useEffect(() => {
         if (count) {
